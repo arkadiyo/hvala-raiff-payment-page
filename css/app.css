@@ -1,0 +1,124 @@
+
+p {
+    font-family: 'Proxima Nova';
+    font-size: 18px;
+    font-weight: 400;
+    color: #393C49;
+}
+
+.tips__container {
+    margin-top: 50px;
+}
+
+.header-block {
+    font-family: 'Golos Text';
+    margin-top: 50px;
+    text-align: center;
+}
+
+.form-block {
+    font-family: 'Golos Text';
+    margin: 28px auto;
+    width: 100%;
+}
+
+.white-input {
+    border: 1px solid;
+}
+
+.p-title {
+    width: 100%;
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    /*line-height: 50px;*/
+    margin: 0 auto 40px auto;
+    /* identical to box height, or 104% */
+
+    color: #393C49;
+}
+
+.p-subtitle {
+    font-family: 'Golos Text';
+    font-size: 24px;
+    font-weight: 600;
+    /*line-height: 50px;*/
+    letter-spacing: 0em;
+    margin-top: 34px;
+}
+
+.btn_g_a_pay{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.check{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.mc_visa{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#goo_pay {
+    background: url(../img/GooPay.png)no-repeat 0px 0px;
+    width: 100px;
+    height: 55px;
+}
+
+#goo_pay:hover {
+    background: url(../img/GooPay_act.png);
+}
+
+#app_pay {
+    background: url(../img/AppPay.png);
+    width: 100px;
+    height: 55px;
+}
+#app_pay:hover {
+    background: url(../img/AppPay_act.png);
+}
+
+.input_1_2{
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+.input_cvv{
+    width: 110px;
+    margin-right: 15px;
+}
+
+.under_info{
+    margin-top: 21px;
+    font-size: 15px;
+}
+
+.img_card{
+    padding-left: 50px;
+    background: url(../img/card.png) no-repeat 12px 19px;
+    background-size: auto 30%;
+    margin-right: 10px;
+}
+
+.mc_visa_mob{
+    width: 51px;
+}
+
+.data{
+    margin: 0;
+    padding: 0 13px;
+    width: 52px;
+}
+
+.cvv{
+    width: 48px;
+    padding: 6px;
+    margin: 0;
+}

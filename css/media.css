@@ -1,0 +1,806 @@
+@charset "UTF-8";
+/**
+ * Адаптивная вёрстка
+ */
+@media only screen and (min-width: 2160px) {
+  .section-2 {
+    height: 1500px;
+  }
+  .btn {
+    font-size: 18px;
+  }
+  .container {
+    max-width: 1440px;
+  }
+}
+@media only screen and (max-width: 2160px) {
+  .btn {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1680px) {
+  .btn {
+    font-size: 14px;
+    height: 50px;
+  }
+  .section-1 .background {
+    right: -200px;
+  }
+  .auth-section .btn {
+    font-size: 18px !important;
+  }
+}
+@media only screen and (max-width: 1600px) {
+  .btn {
+    font-size: 14px;
+  }
+  .section-2 {
+    min-height: 850px;
+  }
+  .section-1 .background {
+    right: -250px;
+  }
+  footer .contacts .contact span {
+    font-size: 15px;
+    line-height: 40px;
+  }
+  .section-5 .content .item .item-header {
+    gap: 36px;
+  }
+  .section-5 .content .item .item-header img {
+    width: 80px;
+    height: 80px;
+  }
+  .section-5 .content .item .item-header h1 {
+    font-size: 26px;
+  }
+  .section-5 .content .item .item-header p {
+    font-size: 18px;
+  }
+  .section-5 .content .item .item-content h1 {
+    font-size: 19px;
+  }
+  .section-5 .content .item .item-content p {
+    font-size: 18px;
+  }
+  .section-4 .union-1 {
+    -ms-grid-columns: 1fr 50px 1.5fr;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 50px;
+  }
+  .section-5 .content .item {
+    height: 304px;
+  }
+  .section-5 .content .item .item-content {
+    margin-top: 24px;
+  }
+  .section-3 .cols .col h1 {
+    font-size: 24px;
+  }
+  .section-3 .cols .col p {
+    font-size: 20px;
+  }
+  .cookie-popup__content__text {
+    font-size: 14px !important;
+  }
+  .auth-section .union-1 h1 {
+    font-size: 40px;
+  }
+  .auth-section .union-1 p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .container {
+    max-width: 90vw;
+  }
+  .section-2 {
+    min-height: 800px;
+  }
+  .section-1 .union-1 .header p {
+    font-size: 38px;
+  }
+  .section-2 .union-1 .header p {
+    font-size: 38px;
+  }
+  .section-4 .union-1 {
+    -ms-grid-columns: 1fr 30px 2fr;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+  }
+  .section-3 .cols .col h1 {
+    font-size: 20px !important;
+  }
+  .section-3 .cols .col p {
+    font-size: 16px !important;
+  }
+  .section-1 .union-1 .content p {
+    line-height: 26px;
+  }
+  .section-2 .union-1 .content p {
+    line-height: 26px;
+  }
+  .auth-section .background {
+    position: fixed;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  header .donats .btn {
+    width: 20vw;
+  }
+  .union-1 .header p {
+    font-size: 30px !important;
+  }
+  .union-1 .content p {
+    font-size: 20px !important;
+  }
+  .col > h1 {
+    font-size: 26px !important;
+  }
+  .col > p {
+    font-size: 20px !important;
+  }
+  .section-5 .content {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .section-1 .background {
+    right: -300px;
+  }
+  .footer .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+  }
+  .gray-border-btn {
+    background-color: #F5F5F5;
+  }
+}
+@media only screen and (max-width: 768px) {  
+  .mobile {
+    display: block;
+  }
+  .mobile-grid {
+    display: -ms-grid;
+    display: grid;
+  }
+  .desktop {
+    display: none;
+  }
+  .container {
+    max-width: 92vw;
+  }
+  header {
+    height: 72px;
+  }
+  header .container {
+    -ms-grid-columns: 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
+  }
+  .header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__logo span {
+    font-size: 24px;
+  }
+  .btn {
+    width: 28vw;
+    height: 40px;
+    font-size: 14px;
+    padding: 9px;
+  }
+  .section-1 {
+    margin-top: 72px;
+    min-height: 593px;
+    height: auto;
+  }
+  .section-1 .background {
+    left: 0px;
+    width: 100%;
+    bottom: 0;
+  }
+  .section-1 .union-1 {
+    width: 95%;
+    top: 28px;
+  }
+  .section-1 .union-1 .header p {
+    font-size: 20px !important;
+  }
+  .section-1 .union-1 .content {
+    margin-top: 24px;
+  }
+  .section-1 .union-1 .content p {
+    font-size: 16px !important;
+  }
+  .section-1 .union-1 .footer {
+    margin-top: 24px;
+  }
+  .section-1 .union-1 .footer .buttons {
+    gap: 16px;
+  }
+  .gray-border-btn {
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
+  .section-2 {
+    height: auto;
+    min-height: auto;
+  }
+  .section-2 .bg-image {
+    width: 100%;
+  }
+  .section-2 .union-1 {
+    width: 95%;
+    margin-top: 40px;
+  }
+  .section-2 .union-1 .header p {
+    font-size: 20px !important;
+  }
+  .section-2 .union-1 .content {
+    margin-top: 24px;
+  }
+  .section-2 .union-1 .content p {
+    font-size: 16px !important;
+  }
+  .section-2 .union-1 .footer {
+    margin-top: 24px;
+  }
+  .section-2 .union-1 .footer .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+  }
+  .section-2 .union-1 .footer .buttons .btn {
+    width: 62vw !important;
+  }
+  .section-3 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .section-3 .col.mobile {
+    position: relative;
+  }
+  .section-3 .cols {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    padding: 0px;
+  }
+  .section-3 .cols .col:first-child {
+    padding-bottom: 22px;
+  }
+  .section-3 .cols .col.mobile {
+    background-color: #fff;
+    width: 100vw;
+    margin-left: -5.5vw;
+    height: 40vw;
+  }
+  .section-3 .cols .col h1 {
+    font-size: 18px !important;
+  }
+  .section-3 .cols .col p {
+    font-size: 16px !important;
+    margin-top: 20px;
+  }
+  .section-3 .cols .col:last-child h1 {
+    margin-top: 14px;
+    width: 35%;
+  }
+  .section-3 .cols .col:last-child p {
+    width: 60%;
+  }
+  .section-3 .background {
+    margin-top: 23px;
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    width: 50%;
+  }
+  .section-4 {
+    position: relative;
+    padding-top: 0px;
+  }
+  .section-4 .container {
+    display: -ms-grid;
+    display: grid;
+  }
+  .section-4 .union-1 {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .section-4 .union-1 .img1 {
+    width: 100%;
+  }
+  .section-4 .union-1 .header p {
+    font-size: 20px !important;
+    line-height: 26px;
+  }
+  .section-4 .union-1 .content {
+    margin-top: 24px;
+  }
+  .section-4 .union-1 .content p {
+    font-size: 16px !important;
+    line-height: 20px;
+  }
+  .section-4 .union-1 .footer {
+    margin-top: 24px;
+  }
+  .section-4 .union-1 .footer .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+  }
+  .section-4 .union-1 .footer .btn {
+    width: 62vw !important;
+  }
+  .section-4 .img1 {
+    margin: 0 auto;
+  }
+  .section-4 .union-2 {
+    width: 100%;
+    position: relative;
+    margin-bottom: 180px;
+  }
+  .section-4 .union-2 h1 {
+    font-size: 20px;
+    line-height: 26px;
+    width: 90%;
+  }
+  .section-4 .union-2 p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 24px;
+    width: 90%;
+  }
+  .section-4 .img2 {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 80%;
+  }
+  .section-5 .container {
+    padding-top: 38px;
+    padding-bottom: 44px;
+  }
+  .section-5 .header h1 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .section-5 .header p {
+    margin-top: 21px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .section-5 .content {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    margin-top: 32px;
+    justify-items: center;
+    grid-gap: 24px;
+  }
+  .section-5 .content .item {
+    height: 242px;
+    width: 100%;
+  }
+  .section-5 .content .item img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+  .section-5 .content .item .item-header h1 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .section-5 .content .item .item-header p {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .section-5 .content .item .item-content {
+    margin-top: 24px;
+  }
+  .section-5 .content .item .item-content h1 {
+    font-size: 18px;
+    line-height: 26px;
+    height: 66px;
+  }
+  .section-5 .content .item .item-content p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .section-5 .footer {
+    margin-top: 24px;
+  }
+  .section-5 .footer .buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+  }
+  .section-5 .footer .buttons .btn {
+    width: 62vw !important;
+  }
+  footer .container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  footer .logo span {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  footer .contacts {
+    margin-top: 24px;
+    grid-gap: 18px;
+  }
+  footer .contacts .contact {
+    gap: 15px;
+  }
+  footer .contacts .contact span {
+    line-height: 20px;
+    font-size: 16px;
+  }
+  footer .socials {
+    margin-top: 36px;
+  }
+  footer .socials .social-icons {
+    gap: 34px;
+  }
+  footer .socials .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+  footer .socials .site-description {
+    margin-top: 30px;
+    margin-bottom: 28px;
+  }
+  .auth-section .union-1 {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    width: 100%;
+  }
+  .auth-section .container .union-1 form {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .auth-section .union-1 h1 {
+    font-size: 20px;
+    line-height: 50px;
+  }
+  .auth-section .union-1 p {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 10px;
+  }
+  .auth-section .union-1 form label {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .auth-section {
+    background: none;
+  }
+  .section-get-tips .header__logo {
+    height: 72px;
+  }
+  .section-get-tips .header h1 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+  .section-get-tips .header p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  form button[type=submit] {
+    height: 55px;
+    margin: 20px 0 20px 0;
+  }
+  .cookie-popup {
+    height: auto;
+  }
+  .cookie-popup__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  .cookie-popup__content__text {
+    width: 100%;
+    font-size: 12px !important;
+  }
+  .cookie-popup__content .btn {
+    width: 100%;
+  }
+  .connect-section .grid-duocol {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .success-connect {
+    padding: 75px 44px !important;
+  }
+  .success-connect__btn {
+    width: 100% !important;
+  }
+  .tips {
+    /*height: 72px !important;*/
+  }
+  .gray-area {
+    width: 100%;
+    min-height: auto;
+    padding: 20px;
+  }
+  .gray-area .white-input {
+    height: 40px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .gray-area .gray-input {
+    height: 40px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  /* СТРАНИЦА ОПЛАТЫ ЧАЕВОЙ... */
+  .payment-section .officiant-preview {
+    width: 100%;
+    height: 80px;
+  }
+  .payment-section .officiant-preview .officiant-preview__image {
+    height: 80px;
+    width: 80px;
+  }
+  .payment-section .gray-area-payment {
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .payment-section .gray-area-payment .payment__value .value__label {
+    font-size: 12px;
+    margin-top: 5px;
+    margin-left: 5px;
+  }
+  .payment-section .gray-area-payment .payment__amount {
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .payment-section .gray-area-payment .payment__amount .payment__fixval {
+    height: 35px;
+    font-size: 14px;
+  }
+  .payment-section .gray-area-payment .payment__rating {
+    margin-bottom: 21px;
+  }
+  .payment-section .gray-area-payment .payment__rating .rating__label {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .payment-section .gray-area-payment .payment__rating .rating__stars {
+    gap: 15px;
+  }
+  .payment-section .gray-area-payment .payment__rating .rating__stars .rating__star {
+    height: 30px;
+    width: auto;
+  }
+  .payment-section .gray-area-payment .payment__agree {
+    margin-bottom: 20px;
+  }
+  .payment-section .gray-area-payment .payment__agree span {
+    font-size: 14px;
+  }
+  .payment-section .gray-area-payment .payment__agree .green-check__text {
+    font-size: 14px;
+  }
+  .payment-section .gray-area-payment .payment__commission .checkbox-slider__content {
+    font-size: 14px;
+    width: 100%;
+    margin-right: 10px;
+  }
+  .payment-section .gray-area-payment .payment__buttons {
+    margin-top: 15px;
+    gap: 12px;
+  }
+  .payment-section .gray-area-payment .payment__buttons .btn {
+    font-size: 14px !important;
+  }
+  .comments_title {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .lables_for_comment {
+    gap: 55px;
+    margin-bottom: 7px;
+  }
+  .comment_lable_blocks {
+    gap: 55px;
+  }
+  .text_comment_lable {
+    font-size: 11px;
+  }
+  .logo_bank {
+    width: 130px;
+  }
+  /* ...СТРАНИЦА ОПЛАТЫ ЧАЕВОЙ */
+  /* СТРАНИЦА ОШИБКИ ПРИ ОПЛАТЕ... */
+  .payment-error-section .container .gray-area-payment-error {
+    width: 100%;
+    padding: 20px;
+  }
+  .payment-error-section .container img {
+    width: 100%;
+  }
+  /* ...СТРАНИЦА ОШИБКИ ПРИ ОПЛАТЕ*/
+  /* СТРАНИЦА КОДА АВТОРИЗАЦИИ... */
+  .code-section .code-section__gray-area {
+    padding: 20px;
+  }
+  .code-section .code-section__gray-area .code-section__title {
+    font-size: 18px;
+  }
+  .code-section .code-section__gray-area .code-section__input-block {
+    margin-top: 20px;
+  }
+  .code-section .code-section__gray-area .code-section__timer, .code-section .code-section__gray-area .code-section__new-link {
+    width: 90%;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  .code-section .code-section__gray-area .code-section__footer {
+    margin-top: 40px;
+  }
+  .code-section .code-section__gray-area .code-section__footer button[type=submit] {
+    height: 40px;
+  }
+  /* ...СТРАНИЦА КОДА АВТОРИЗАЦИИ*/
+  .p-title{
+    font-size: 30px !important;
+  }
+  .p-subtitle{
+    font-size: 20px !important;
+    margin-top: 20px !important;
+  }
+  .header-block{
+    /*margin-top: 10px !important;*/
+  }
+}
+@media only screen and (max-width: 540px) {
+  p {
+    font-size: 13px !important;
+  }
+
+  .under_info{
+    font-size: 13px !important;
+  }
+
+  .section-3 .cols .col.mobile {
+    height: 29vw;
+  }
+
+  .section-4 .union-2 {
+    margin-bottom: 170px;
+  }
+
+  .payment-section .officiant-preview .officiant-preview__info-col h1 {
+    font-size: 16px;
+  }
+
+  .payment-section .officiant-preview .officiant-preview__info-col p {
+    font-size: 14px;
+  }
+
+  .lables_for_comment {
+    gap: 20px;
+  }
+
+  .p-title{
+    font-size: 25px !important;
+  }
+
+  .p-subtitle{
+    font-size: 20px !important;
+  }
+
+  .white-input{
+    height: 45px;
+  }
+
+  .gray-input{
+    height: 45px;
+  }
+
+  .input_cvv{
+    width: 78px !important;
+  }
+
+  .img_card{
+    padding-left: 42px !important;
+    background: url(../img/card.png) no-repeat 12px 15px !important;
+  }
+
+  .check{
+    width: 22px;
+  }
+
+  .mc_visa{
+    width: 51px;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .check{
+    margin-right: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 386px) {
+  .p-title{
+    font-size: 20px !important;
+  }
+
+  .p-subtitle{
+    font-size: 15px !important;
+  }
+
+  .input_1_2{
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .white-input{
+    font-size: 15px;
+  }
+
+  .data{
+    width: 46px !important;
+  }
+
+  .cvv{
+    width: 47px !important;
+    padding: 8px !important;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .btn {
+    font-size: 12px !important;
+  }
+  .section-5 .content .item {
+    padding: 20px;
+  }
+  .section-5 .content .item .item-content p {
+    font-size: 16px !important;
+    margin-top: 10px;
+  }
+  .section-5 .content .item .item-content h1 {
+    font-size: 16px !important;
+  }
+  .section-3 .cols .col:last-child h1 {
+    width: 40%;
+  }
+  .section-4 .union-2 {
+    margin-bottom: 100px;
+  }
+}
