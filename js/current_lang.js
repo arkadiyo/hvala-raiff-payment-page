@@ -8,8 +8,8 @@ $.i18n( {
 });
 
 $.i18n().load({
-    "sr": "js/lang_js/sr.json",
-    "en": "js/lang_js/en.json"
+    "sr": "js/sr.json",
+    "en": "js/en.json"
 }).done(function() {
     $('body').i18n();
 });
