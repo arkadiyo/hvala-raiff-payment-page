@@ -6,6 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Hvala Tips </title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/public/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel='stylesheet' href='css/reset.css'>
     <link rel='stylesheet' href='css/fonts.css'>
     <link rel='stylesheet' href='css/main.css'>
@@ -33,8 +52,8 @@
                     <span>hvala.</span>
                     <span>tips</span>
                 </a>
-                <div id="switch_lang" style="display: flex;align-items: center;margin-right: 20px;cursor: pointer;">
-                    <img src="img/globe.png" alt="icon">
+                <div id="switch_lang" style="display: flex;align-items: center;cursor: pointer;">
+                    <img src="img/globe.png" alt="icon" class="lang_logo">
                     <p class="btn_header" id="lang">Serbian</p>
                 </div>
                 <img src="img/raiffeisen_bank.png" class="logo_bank" alt="img-raiffeisen_bank">
@@ -61,13 +80,17 @@
                     <div style="margin-top: 28px;">
                         <div style="display: flex;align-items: center;">
                             <p style="margin-right: 11px;" data-i18n="hvalatips-title3">Broj cartice</p>
-                            <img src="img/mc_visa.png" alt="" class="mc_visa_mob">  
+                            <img src="img/mc.png" alt="" class="mc_mob">  
+                            <img src="img/visa.png" alt="" class="visa_mob">  
+                            <img src="img/dinacard.png" alt="" class="dina_mob"> 
                         </div>
                         <div style="display: flex;align-items: center;">
-                            <input name="CardNumber" type="text" class='white-input img_card' id='broj_cartice' data-id="0" placeholder='000-0000000000000-00'>
+                            <input name="CardNumber" type="text" class='white-input img_card' id='broj_cartice' data-id="0" placeholder='0000 0000 0000 0000'>
                             <img src="img/disabled.png" alt="" id="disabled" class="check">
                             <img src="img/active.png" alt="" id="active" class="check" style="display: none;">
-                            <img src="img/mc_visa.png" alt="" class="mc_visa">                            
+                            <img src="img/mc.png" alt="" class="mc">                           
+                            <img src="img/visa.png" alt="" class="visa">                           
+                            <img src="img/dinacard.png" alt="" class="dina">                            
                         </div>                                                
                     </div>
 

@@ -540,9 +540,9 @@
   .success-connect__btn {
     width: 100% !important;
   }
-  .tips {
-    /*height: 72px !important;*/
-  }
+  /*.tips {
+    height: 72px !important;
+  }*/
   .gray-area {
     width: 100%;
     min-height: auto;
@@ -639,7 +639,7 @@
     font-size: 11px;
   }
   .logo_bank {
-    width: 130px;
+    width: 130px !important;
   }
   /* ...СТРАНИЦА ОПЛАТЫ ЧАЕВОЙ */
   /* СТРАНИЦА ОШИБКИ ПРИ ОПЛАТЕ... */
@@ -680,9 +680,9 @@
     font-size: 20px !important;
     margin-top: 20px !important;
   }
-  .header-block{
-    /*margin-top: 10px !important;*/
-  }
+  /*.header-block{
+    margin-top: 10px !important;
+  }*/
 }
 @media only screen and (max-width: 540px) {
   p {
@@ -741,16 +741,33 @@
   .check{
     width: 22px;
   }
-
-  .mc_visa{
-    width: 51px;
-    margin-right: 0;
-  }
 }
 
 @media only screen and (max-width: 420px) {
   .check{
     margin-right: 0px !important;
+  }
+
+  .logo_bank {
+    width: 75px !important;
+  }
+
+  .btn_header{
+    font-size: 12px !important;
+  }
+
+  .lang_logo{
+    width: 16px !important;
+  }
+
+  #app_pay {
+    width: 122px !important;
+    height: 67px !important;
+  }
+  
+  #goo_pay {
+    width: 122px !important;
+    height: 67px !important;
   }
 }
 
