@@ -1,21 +1,29 @@
 let curentWidth = window.innerWidth;
-if(curentWidth<=420){
-    $('.mc_visa').attr('style', 'display:none');
-    $('.mc_visa_mob').attr('style', 'display:block');
+if(curentWidth<=505){
+    $('.mc').attr('style', 'display:none');
+    $('.visa').attr('style', 'display:none');
+    $('.dina').attr('style', 'display:none');
+    $('.mc_mob').attr('style', 'display:block');
+    $('.visa_mob').attr('style', 'display:block');
+    $('.dina_mob').attr('style', 'display:block');
 } else {
-    $('.mc_visa').attr('style', 'display:block');
-    $('.mc_visa_mob').attr('style', 'display:none');
+    $('.mc').attr('style', 'display:block');
+    $('.visa').attr('style', 'display:block');
+    $('.dina').attr('style', 'display:block');
+    $('.mc_mob').attr('style', 'display:none');
+    $('.visa_mob').attr('style', 'display:none');
+    $('.dina_mob').attr('style', 'display:none');
 }
 
 //маска для номера счета
 $('body').on('input', '#broj_cartice', function(){
 	this.value = this.value.replace(/[^0-9]/g, '');
   const mask = new IMask(this, {
-    mask: "000-0000000000000-00",
+    mask: "0000 0000 0000 0000",
   });
   
   //проверка заполнения поля
-  if (this.value.length == 20){
+  if (this.value.length == 19){
     $('#disabled').attr('style', 'display: none;');
     $('#active').attr('style', 'display: block;');
     $(this).attr('data-id','1');

@@ -56,32 +56,49 @@ p {
 }
 
 .check{
+    width: 32px;
     margin-top: 10px;
     margin-right: 10px;
 }
 
-.mc_visa{
+.visa{
     margin-top: 10px;
-    margin-right: 10px;
+    margin-right: 7px;
+    width: 40px;
+}
+
+.mc{
+    margin-top: 10px;
+    margin-right: 3px;
+    width: 40px;
+}
+
+.dina{
+    margin-top: 10px;
+    width: 60px;
 }
 
 #goo_pay {
     background: url(../img/GooPay.png)no-repeat 0px 0px;
-    width: 100px;
-    height: 55px;
+    width: 150px;
+    height: 82px;
+    background-size: cover;
 }
 
 #goo_pay:hover {
     background: url(../img/GooPay_act.png);
+    background-size: cover;
 }
 
 #app_pay {
     background: url(../img/AppPay.png);
-    width: 100px;
-    height: 55px;
+    width: 150px;
+    height: 82px;
+    background-size: cover;
 }
 #app_pay:hover {
     background: url(../img/AppPay_act.png);
+    background-size: cover;
 }
 
 .input_1_2{
@@ -107,8 +124,17 @@ p {
     margin-right: 10px;
 }
 
-.mc_visa_mob{
-    width: 51px;
+.visa_mob{
+    width: 30px;
+}
+
+.mc_mob{
+    width: 30px;
+}
+
+.dina_mob{
+    margin-left: 5px;
+    width: 40px;
 }
 
 .data{
@@ -121,4 +147,12 @@ p {
     width: 48px;
     padding: 6px;
     margin: 0;
+}
+
+.logo_bank{
+    width: 150px;
+}
+
+.lang_logo{
+    width: 25px;
 }
