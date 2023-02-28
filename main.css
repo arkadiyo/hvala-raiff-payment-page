@@ -44,6 +44,12 @@ form .double-input, .grid-duocol, .section-4 .union-1, .section-3 .cols, header 
   display: none;
 }
 
+.half-hidden {
+  pointer-events: none;
+  opacity: .7;
+  cursor: default;
+}
+
 .btn {
   height: 56px;
   width: 237px;
@@ -1672,4 +1678,19 @@ input:checked + .slider:before {
   width: -webkit-max-content !important;
   width: -moz-max-content !important;
   width: max-content !important;
+}
+
+.error {
+  /* display: block; */
+  color: #EA7C69;
+  opacity: 0;
+}
+
+.error.active {
+  opacity: 1;
+  display: block;
+}
+
+.errors-block {
+  text-align: center;
 }

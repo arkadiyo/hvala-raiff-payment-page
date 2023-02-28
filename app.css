@@ -79,25 +79,25 @@ p {
 }
 
 #goo_pay {
-    background: url(../img/GooPay.png)no-repeat 0px 0px;
+    background: url(GooPay.png)no-repeat 0px 0px;
     width: 150px;
     height: 82px;
     background-size: cover;
 }
 
 #goo_pay:hover {
-    background: url(../img/GooPay_act.png);
+    background: url(GooPay_act.png);
     background-size: cover;
 }
 
 #app_pay {
-    background: url(../img/AppPay.png);
+    background: url(AppPay.png);
     width: 150px;
     height: 82px;
     background-size: cover;
 }
 #app_pay:hover {
-    background: url(../img/AppPay_act.png);
+    background: url(AppPay_act.png);
     background-size: cover;
 }
 
@@ -119,7 +119,7 @@ p {
 
 .img_card{
     padding-left: 50px;
-    background: url(../img/card.png) no-repeat 12px 19px;
+    background: url(card.png) no-repeat 12px 19px;
     background-size: auto 30%;
     margin-right: 10px;
 }
@@ -139,7 +139,7 @@ p {
 
 .data{
     margin: 0;
-    padding: 0 13px;
+    padding: 0 10px;
     width: 52px;
 }
 
