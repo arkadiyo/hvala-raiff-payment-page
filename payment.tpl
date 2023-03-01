@@ -31,6 +31,48 @@
     <link rel='stylesheet' href='css/${payment.templateName}/media.css'>
     <link rel='stylesheet' href='css/${payment.templateName}/app.css'>
 
+    <style>
+        
+        .img_card{
+            padding-left: 50px;
+            background: url(img/${payment.templateName}/card.png) no-repeat 12px 19px;
+            background-size: auto 30%;
+            margin-right: 10px;
+        }
+
+        #goo_pay {
+            background: url(img/${payment.templateName}/GooPay.png)no-repeat 0px 0px;
+            width: 150px;
+            height: 82px;
+            background-size: cover;
+        }
+
+        #goo_pay:hover {
+            background: url(img/${payment.templateName}/GooPay_act.png);
+            background-size: cover;
+        }
+
+        #app_pay {
+            background: url(img/${payment.templateName}/AppPay.png);
+            width: 150px;
+            height: 82px;
+            background-size: cover;
+        }
+        #app_pay:hover {
+            background: url(img/${payment.templateName}/AppPay_act.png);
+            background-size: cover;
+        }
+
+        @media only screen and (max-width: 540px) {
+            .img_card{
+                padding-left: 42px !important;
+                background: url(img/${payment.templateName}/card.png) no-repeat 12px 15px !important;
+            }
+        }
+
+
+    </style>
+
 </head>
 
 <body>

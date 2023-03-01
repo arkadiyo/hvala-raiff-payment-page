@@ -78,29 +78,6 @@ p {
     width: 60px;
 }
 
-#goo_pay {
-    background: url(GooPay.png)no-repeat 0px 0px;
-    width: 150px;
-    height: 82px;
-    background-size: cover;
-}
-
-#goo_pay:hover {
-    background: url(GooPay_act.png);
-    background-size: cover;
-}
-
-#app_pay {
-    background: url(AppPay.png);
-    width: 150px;
-    height: 82px;
-    background-size: cover;
-}
-#app_pay:hover {
-    background: url(AppPay_act.png);
-    background-size: cover;
-}
-
 .input_1_2{
     display: flex;
     gap: 16px;
@@ -117,12 +94,6 @@ p {
     font-size: 15px;
 }
 
-.img_card{
-    padding-left: 50px;
-    background: url(card.png) no-repeat 12px 19px;
-    background-size: auto 30%;
-    margin-right: 10px;
-}
 
 .visa_mob{
     width: 30px;
