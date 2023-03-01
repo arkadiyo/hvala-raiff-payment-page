@@ -94,8 +94,12 @@
                 <div class="p-title" data-i18n-key="hvalatips-title1">Unesite informacije o kartici</div>
                
                 <div class="btn_g_a_pay">
-                   <a href="" id="goo_pay"></a>
-                   <a href="" id="app_pay"></a>
+                    <#if allowGooglePay>
+                        <a href="" id="goo_pay"></a>
+                    </#if>
+                    <#if allowApplePay>
+                        <a href="" id="app_pay"></a>
+                    </#if>
                 </div>
             </div>
 
@@ -195,6 +199,65 @@
 <script nonce=${nonce}>
     const cardData = `${upcTokenData}` ? JSON.parse(`${upcTokenData}`) : {};
 </script>
+
+<#if allowApplePay>
+    <script nonce="${nonce}">
+        const merchId = "${applePayIdentifier}", paymentForm="cardForm";
+        var idSubmitOfPaymentForm = "btn_pay";
+
+        if (typeof window.ApplePaySession == 'function') {
+            var paymentRequest = {
+                currencyCode: "${currency}",
+                countryCode: "SR",
+                lineItems: [{
+                    label: "${payment.merchantName}",
+                    amount: "${payment.decimalAmount}"
+                }],
+
+                total: {
+                    label: "${payment.merchantName}",
+                    amount: "${payment.decimalAmount}"
+                },
+
+                supportedNetworks: ['masterCard', 'visa'],
+                merchantCapabilities: ['supports3DS']
+            };
+            const applePay = new UPCApplePay(merchId, paymentRequest);
+        } else {
+            console.log("ApplePay is not supported");
+        }
+        $("#btn_pay").click(function(){return true;});
+    </script>
+
+</#if>
+
+
+
+<#if allowGooglePay>
+
+    <script nonce="${nonce}">
+        let idSubmitOfPaymentForm1 = "btn_pay";
+        paymentData.google = {
+            gateway: '${googlePayGatewayId}',
+            profile: '${googlePayEnvironment}',
+            allowedCards: ['VISA', 'MASTERCARD'],
+            domData: {googleContainer: "googlePayButton", paymentForm:"payform", paymentButton: idSubmitOfPaymentForm1},
+            button: {color: 'black', type: 'long'}
+        };
+        $("#btn_pay").click(function(){return true;});
+    </script>
+    <script type="text/javascript" src="jscript/googlePay.js?v=${app_version}"></script>
+    <script type="text/javascript" src="jscript/lib/gPay.js?v=${app_version}"></script>
+    <script nonce="${nonce}">
+        $(document).ready(
+            function() {
+                onGooglePayLoaded();
+            }
+        );
+    </script>
+
+</#if>
+
 <script src="js/${payment.templateName}/localization.js"></script>
 <script src="js/${payment.templateName}/main.js"></script>
 
