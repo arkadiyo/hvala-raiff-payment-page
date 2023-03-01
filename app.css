@@ -110,14 +110,16 @@ p {
 
 .data{
     margin: 0;
-    padding: 0 10px;
+    padding: 0;
     width: 52px;
+    text-align: center;
 }
 
 .cvv{
     width: 48px;
-    padding: 6px;
+    padding: 0;
     margin: 0;
+    text-align: center;
 }
 
 .logo_bank{
