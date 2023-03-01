@@ -85,7 +85,7 @@ p {
 }
 
 .input_cvv{
-    width: 110px;
+    width: fit-content !important;
     margin-right: 15px;
 }
 
