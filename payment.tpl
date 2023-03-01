@@ -151,16 +151,7 @@
     </div>
     
 <script nonce=${nonce}>
-    // const cardData = `${upcTokenData}` ? JSON.parse(`${upcTokenData}`) : {};
-
-    // TODO: remove after testing
-    const cardData = {
-        token: '573288C6D3214E193E613051EA57462D',
-        pan: '499999******0011',
-        month: '12',
-        year: '2022',
-    };
-    console.log(cardData, 'cardData');
+    const cardData = `${upcTokenData}` ? JSON.parse(`${upcTokenData}`) : {};
 </script>
 <script src="js/${payment.templateName}/localization.js"></script>
 <script src="js/${payment.templateName}/main.js"></script>
