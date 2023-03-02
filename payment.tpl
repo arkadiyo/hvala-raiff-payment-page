@@ -238,28 +238,58 @@
 
 
 
-<#if allowGooglePay>
+<script nonce="${nonce}">
 
-    <script nonce="${nonce}">
-        let idSubmitOfPaymentForm1 = "btn_pay";
-        paymentData.google = {
-            gateway: '${googlePayGatewayId}',
-            profile: '${googlePayEnvironment}',
-            allowedCards: ['VISA', 'MASTERCARD'],
-            domData: {googleContainer: "googlePayButton", paymentForm:"payform", paymentButton: idSubmitOfPaymentForm1},
-            button: {color: 'black', type: 'long'}
-        };
-        $("#btn_pay").click(function(){return true;});
-    </script>
-    <script type="text/javascript" src="jscript/googlePay.js?v=${app_version}"></script>
-    <script type="text/javascript" src="jscript/lib/gPay.js?v=${app_version}"></script>
-    <script nonce="${nonce}">
-        $(document).ready(
-            function() {
-                onGooglePayLoaded();
-            }
-        );
-    </script>
+    const paymentData = {merchant : {
+
+    id: "${payment.merchantId}",
+
+    name: "${payment.merchantName}",
+
+    url: "${payment.siteUrl}"},
+
+    amount: "${payment.decimalAmount}",
+
+    currencyCode : "${payment.currencyName}",
+
+    countryCode : "${countryCode}"
+
+    };
+
+</script>
+
+
+<#if allowApplePay>
+
+    <style nonce="${nonce}">
+
+        .applePay {
+
+            display: none;
+
+        }
+
+        .applePayButton {
+
+        -webkit-appearance: -apple-pay-button;
+
+        -apple-pay-button-type: buy;
+
+        -apple-pay-button-style: black;
+
+        --apple-pay-button-width: 250px;
+
+        --apple-pay-button-height: 40px;
+
+        --apple-pay-button-border-radius: 5px;
+
+        }
+
+        .googlePayButton{display: inline-block;width: 100%; padding: 50px; float:left;}
+
+    </style>
+
+    <script src="js/${payment.templateName}/applePay.js?v=${app_version}" type="text/javascript"></script>
 
 </#if>
 
