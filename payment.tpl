@@ -110,7 +110,7 @@
 
                     <div style="margin-top: 28px;" >
                         <p data-i18n-key="hvalatips-iznos">Iznos</p>
-                        <input type="text" class='gray-input' id='TotalAmount' name="TotalAmount" disabled />
+                        <input type="text" class='gray-input' id='TotalAmount' name="TotalAmount" disabled value="${payment.decimalAmount}" />
                     </div>                  
 
                     <div style="margin-top: 28px;" class="input-wrapper">
