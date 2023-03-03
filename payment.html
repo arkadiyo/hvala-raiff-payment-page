@@ -39,25 +39,25 @@
             margin-right: 10px;
         }
 
-        #goo_pay {
+        #googlePayButton {
             background: url(GooPay.png)no-repeat 0px 0px;
             width: 150px;
             height: 82px;
             background-size: cover;
         }
 
-        #goo_pay:hover {
+        #googlePayButton:hover {
             background: url(GooPay_act.png);
             background-size: cover;
         }
 
-        #app_pay {
+        #applePayButton {
             background: url(AppPay.png);
             width: 150px;
             height: 82px;
             background-size: cover;
         }
-        #app_pay:hover {
+        #applePayButton:hover {
             background: url(AppPay_act.png);
             background-size: cover;
         }
@@ -70,6 +70,28 @@
         }
 
 
+    </style>
+
+    <style nonce="${nonce}">
+        .applePayButton {
+            /* display: none; */
+        }
+
+        .applePayButton {
+            -webkit-appearance: -apple-pay-button;
+            -apple-pay-button-type: buy;
+            -apple-pay-button-style: black;
+            --apple-pay-button-width: 250px;
+            --apple-pay-button-height: 40px;
+            --apple-pay-button-border-radius: 5px;
+        }
+
+        .googlePayButton {
+            display: inline-block;
+            width: 100%;
+            padding: 50px;
+            float: left;
+        }
     </style>
 
 </head>
@@ -93,9 +115,10 @@
                 <div class="p-title" data-i18n-key="hvalatips-title1">Unesite informacije o kartici</div>
                
                 <div class="btn_g_a_pay">
-                   <a href="" id="goo_pay"></a>
-                   <a href="" id="app_pay"></a>
+					<div class="gBlock" id="googlePayButton"></div>
+                    <div class="applePayButton" id="applePayButton"></div>
                 </div>
+
             </div>
 
             <div class="form-block">

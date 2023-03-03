@@ -757,12 +757,12 @@
     width: 16px !important;
   }
 
-  #app_pay {
+  #applePayButton {
     width: 122px !important;
     height: 67px !important;
   }
   
-  #goo_pay {
+  #googlePayButton {
     width: 122px !important;
     height: 67px !important;
   }
