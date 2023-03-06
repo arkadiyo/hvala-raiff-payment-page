@@ -73,9 +73,9 @@
     </style>
 
     <style nonce="${nonce}">
-        .applePayButton {
-            /* display: none; */
-        }
+        /* .applePay {
+            display: none;
+        } */
 
         .applePayButton {
             -webkit-appearance: -apple-pay-button;
@@ -115,8 +115,21 @@
                 <div class="p-title" data-i18n-key="hvalatips-title1">Unesite informacije o kartici</div>
                
                 <div class="btn_g_a_pay">
-					<div class="gBlock" id="googlePayButton"></div>
-                    <div class="applePayButton" id="applePayButton"></div>
+					<!-- <div class="gBlock" id="googlePayButton"></div>
+                    <div class="applePayButton" id="applePayButton"></div> -->
+                    <#if allowGooglePay>
+                        <div class="payments-block">
+                            <div class="gBlock" id="googlePayButton"></div>
+                        </div>
+                    </#if>
+            
+                    <#if allowApplePay>
+                        <div class="payments-block">
+                            <div class="applePay">
+                                <div class="applePayButton" id="applePayButton"></div>
+                            </div>
+                        </div>
+                    </#if>
                 </div>
 
             </div>
