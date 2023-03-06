@@ -35,7 +35,7 @@
         margin-right: 10px;
       }
 
-      #googlePayButton {
+      /* #googlePayButton {
         background: url(img/${payment.templateName}/GooPay.png)no-repeat 0px 0px;
         width: 150px;
         height: 82px;
@@ -57,12 +57,19 @@
       #applePayButton:hover {
         background: url(img/${payment.templateName}/AppPay_act.png);
         background-size: cover;
-      }
+      } */
 
       @media only screen and (max-width: 540px) {
         .img_card {
           padding-left: 42px !important;
           background: url(img/${payment.templateName}/card.png) no-repeat 12px 15px !important;
+        }
+
+        .btn_g_a_pay {
+            display: block;
+        }
+        .payments-block {
+            margin-bottom: 20px;
         }
       }
     </style>
@@ -84,7 +91,7 @@
           display: none;
         } */
 
-        .applePayButton {
+        /* .applePayButton {
           -webkit-appearance: -apple-pay-button;
           -apple-pay-button-type: buy;
           -apple-pay-button-style: black;
@@ -98,7 +105,7 @@
           width: 100%;
           padding: 50px;
           float: left;
-        }
+        } */
       </style>
       <script type="text/javascript" src="jscript/lib/jquery-2.1.4.min.js"></script>
       <script src="${contextPath}/jscript/applePay.js?v=${app_version}" type="text/javascript"></script>

@@ -757,7 +757,7 @@
     width: 16px !important;
   }
 
-  #applePayButton {
+  /* #applePayButton {
     width: 122px !important;
     height: 67px !important;
   }
@@ -765,7 +765,7 @@
   #googlePayButton {
     width: 122px !important;
     height: 67px !important;
-  }
+  } */
 }
 
 @media only screen and (max-width: 386px) {

@@ -39,7 +39,7 @@
             margin-right: 10px;
         }
 
-        #googlePayButton {
+        /* #googlePayButton {
             background: url(GooPay.png)no-repeat 0px 0px;
             width: 150px;
             height: 82px;
@@ -60,13 +60,21 @@
         #applePayButton:hover {
             background: url(AppPay_act.png);
             background-size: cover;
-        }
+        } */
 
         @media only screen and (max-width: 540px) {
             .img_card{
                 padding-left: 42px !important;
                 background: url(card.png) no-repeat 12px 15px !important;
             }
+            
+            .btn_g_a_pay {
+                display: block;
+            }
+            .payments-block {
+                margin-bottom: 20px;
+            }
+            
         }
 
 
@@ -77,7 +85,7 @@
             display: none;
         } */
 
-        .applePayButton {
+        /* .applePayButton {
             -webkit-appearance: -apple-pay-button;
             -apple-pay-button-type: buy;
             -apple-pay-button-style: black;
@@ -91,6 +99,34 @@
             width: 100%;
             padding: 50px;
             float: left;
+        } */
+
+
+        .gpay-button.black.long {
+            background-image: url(https://www.gstatic.com/instantbuy/svg/dark/ru.svg);
+        }
+
+        .gpay-button.long {
+            min-width: 206px;
+            width: 240px;
+        }
+        .gpay-button.black {
+            background-color: #000;
+            box-shadow: none;
+            padding: 12px 24px 10px;
+        }
+        .gpay-button {
+            background-origin: content-box;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            border: 0px;
+            border-radius: 4px;
+            box-shadow: rgb(60 64 67 / 30%) 0px 1px 1px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+            cursor: pointer;
+            height: 40px;
+            min-height: 40px;
+            padding: 11px 24px;
         }
     </style>
 
@@ -117,19 +153,23 @@
                 <div class="btn_g_a_pay">
 					<!-- <div class="gBlock" id="googlePayButton"></div>
                     <div class="applePayButton" id="applePayButton"></div> -->
-                    <#if allowGooglePay>
+                    <!-- <#if allowGooglePay> -->
                         <div class="payments-block">
-                            <div class="gBlock" id="googlePayButton"></div>
-                        </div>
-                    </#if>
-            
-                    <#if allowApplePay>
-                        <div class="payments-block">
-                            <div class="applePay">
-                                <div class="applePayButton" id="applePayButton"></div>
+                            <div class="gBlock" id="googlePayButton">
+                                <button type="button" aria-label="Google Pay" class="gpay-button black long"></button>
                             </div>
                         </div>
-                    </#if>
+                    <!-- </#if> -->
+            
+                    <!-- <#if allowApplePay> -->
+                        <div class="payments-block">
+                            <div class="applePay">
+                                <div class="applePayButton" id="applePayButton">
+                                    <button type="button" aria-label="Google Pay" class="gpay-button black long"></button>
+                                </div>
+                            </div>
+                        </div>
+                    <!-- </#if> -->
                 </div>
 
             </div>
