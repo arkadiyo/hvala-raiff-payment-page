@@ -87,11 +87,11 @@
     </script>
     <#if allowApplePay>
       <style nonce="${nonce}">
-        /* .applePay {
+        .applePay {
           display: none;
-        } */
+        }
 
-        /* .applePayButton {
+         .applePayButton {
           -webkit-appearance: -apple-pay-button;
           -apple-pay-button-type: buy;
           -apple-pay-button-style: black;
@@ -99,7 +99,7 @@
           --apple-pay-button-height: 40px;
           --apple-pay-button-border-radius: 5px;
         }
-
+        /*
         .googlePayButton {
           display: inline-block;
           width: 100%;
