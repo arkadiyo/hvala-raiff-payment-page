@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<#assign lang=locale!localeDefault>
+<#setting number_format="0.00">
 <html lang="${lang}">
   <head>
     <meta charset="UTF-8">
@@ -87,9 +89,9 @@
     </script>
     <#if allowApplePay>
       <style nonce="${nonce}">
-        .applePay {
+         .applePay {
           display: none;
-        }
+        } 
 
          .applePayButton {
           -webkit-appearance: -apple-pay-button;
@@ -99,8 +101,8 @@
           --apple-pay-button-height: 40px;
           --apple-pay-button-border-radius: 5px;
         }
-        /*
-        .googlePayButton {
+
+       /* .googlePayButton {
           display: inline-block;
           width: 100%;
           padding: 50px;
@@ -108,7 +110,7 @@
         } */
       </style>
       <script type="text/javascript" src="jscript/lib/jquery-2.1.4.min.js"></script>
-      <script src="${contextPath}/jscript/applePay.js?v=${app_version}" type="text/javascript"></script>
+      <script src="jscript/lib/applePay.js" type="text/javascript"></script>
     </#if>
   </head>
   <body>
@@ -241,7 +243,7 @@
         if (typeof window.ApplePaySession == 'function') {
           var paymentRequest = {
             currencyCode: "${currency}",
-            countryCode: "SR",
+            countryCode: "${countryCode}",
             lineItems: [{
               label: "${payment.merchantName}",
               amount: "${payment.decimalAmount}"
@@ -251,7 +253,7 @@
               amount: "${payment.decimalAmount}"
             },
             supportedNetworks: ['masterCard', 'visa'],
-            merchantCapabilities: ['supports3DS']
+            merchantCapabilities: ['supports3DS', 'supportsCredit', 'supportsDebit']
           };
           const applePay = new UPCApplePay(merchId, paymentRequest);
         } else {
