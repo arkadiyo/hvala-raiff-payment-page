@@ -110,7 +110,7 @@
         } */
       </style>
       <script type="text/javascript" src="jscript/lib/jquery-2.1.4.min.js"></script>
-      <script src="jscript/lib/applePay.js" type="text/javascript"></script>
+      <script src="${contextPath}/jscript/applePay.js?v=${app_version}" type="text/javascript"></script>
     </#if>
   </head>
   <body>
